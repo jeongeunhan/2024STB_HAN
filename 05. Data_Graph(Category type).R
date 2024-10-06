@@ -8,7 +8,7 @@ prop.table(ECN)#상대 도수로 표시
 # table()함수/2개의 인자를 가지고 교차표를 작성
 table(KOTRA2024 $Area, KOTRA2024 $`type of investment`)
 
-#막대그래프1
+#막대그래프1 
 barplot(table(KOTRA2024 $Area))
 
 #누적-막대그래프
@@ -49,3 +49,4 @@ text(x=bp, y=entry, labels=entry, pos=3)#막대그래프에 값 표시
 
 #막대그래프3 편집(가로)
 barplot(table(KOTRA2024 $Area),col=pal1, xlab = "진출대륙명", ylab = "진출기업수", xlim=c(0,7000), horiz=TRUE)
+text(x=entry, y=bp, labels=entry, pos=4)
