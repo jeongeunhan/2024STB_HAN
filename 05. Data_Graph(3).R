@@ -53,7 +53,6 @@ boxplot(Age ~ Grade, data = survey_80,
         col = "lightblue")
 
 #산점도 만들기 
-
 # 결측값 확인 혹시나해서..
 sum(is.na(survey_80$Grade))  
 sum(is.na(survey_80$Age)) 
