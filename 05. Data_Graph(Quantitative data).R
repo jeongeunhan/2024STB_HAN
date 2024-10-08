@@ -21,3 +21,8 @@ plot(x=dust$pm10, y=dust$pm25, xlab="미세먼지", ylab="초미세먼지", main
 
 #산점도3
 plot(x=dust$pm10, y=dust$pm25, xlab="미세먼지", ylab="초미세먼지", main="미세먼지와 초미세먼지의 변화", type = "h")
+boxplot(dust)
+#3주차에 학습한 기술통계분석 결과를 박스 플롯과 같이 첨부
+summary(mof)
+summary(mof, na.rm=T)
+boxplot(mof)
